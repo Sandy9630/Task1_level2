@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Component with Bulma</title>
+  <!-- Link to Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <!-- Custom CSS for card styling -->
+  <style>
+    /* Optional custom styling */
+    .custom-card {
+      margin-bottom: 20px;
+    }
+    .custom-card .card-content {
+      padding: 20px;
+    }
+    .custom-card .card-image img {
+      border-radius: 5px 5px 0 0; /* Rounded corners for top of image */
+    }
+    button{
+        text-align: center;
+        font-size: larger;
+        background-color: green;
+    }
+    h3{
+        text-align: center;
+    }
+    button:hover{
+
+        background-color: blue;
+    }
+
+    body{
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    nav {
+    background-color: black;
+    color:white;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-bottom:100px ;
+  }
+  
+  a:hover{
+background-color: blue;
+    
+  }
+  h1{
+
+    color: blue;
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline dashed;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  a{
+    margin-top: 100px;
+    color: black;
+  };
+  
+  .column is-4{
+
+ margin-top: 100px;
+
+  }
+
+  .card custom-card{
+
+margin-top: 100px;
+  }
+
+  </style>
+</head>
+<body background=c:\Users\hp\Pictures\zxxxxx.webp>
+  <h1><i>Welcome to Mobile Mart</i></h1>
+      
+  <nav>
+    <div class="logo">Logo</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+  </nav>
+
+
+  </div>
+
+  <div class="container">
+    <div class="columns is-multiline">
+      <!-- Card 1 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="C:\Users\hp\Pictures\z.jpg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Redmi 13C</p>
+                    <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              Redmi 13C aims to offer a solid 5G experience coupled with an interesting-looking design and good battery life Lorem, ipsum dolor sit amet dfg ggg trrr.
+        
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="C:\Users\hp\Pictures\Z2.webp" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Redmi 11 Prime 5G</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              The Redmi 11 Prime 5G supports proprietary fast charging. As far as the cameras are concerned, the Redmi 11 Prime 5G on the rear packs 50-megapixel camera.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+       <!-- Card 3 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z3.jpeg alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Narzo 20</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              The 6,000mAh battery is a beast, and if you are not all that into gaming, you can last a comfortable two days without even thinking of charging the phone.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z4.jpeg alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Realme 12 Pro</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              The Realme 12 Pro packs a 6.7" curved OLED screen of 2,412x1,080-pixel resolution with 120 Hz refresh rate and 240 Hz touch sampling rate.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z5.jpeg alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Vivo Y18e</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              High Brightness Display. A larger display gives you a better viewing experience.13 MP Portrait Camera.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6-->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z5.png alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Vivo V30 Pro</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              Vivo V30 Pro have impressive camera quality, design, 1.5K AMOLED display, 120Hz refresh rate, 12GB RAM option, and Andaman Blue color. 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z6.webp alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Vivo Y18</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              Unlock your device in a breeze with a side-mounted fingerprint  Af far camera on the rear.
+              50-megapixel.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z7.jpeg alt ="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Poco M6 5G</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              The new POCO M6 5G lands squarely in the budget 5G segment, which is a price bracket that can do with more options for sure.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z8.avif alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Samsung Galaxy S24  </p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              he Galaxy S24 Series is also water and dust resistant, with all three phones featuring an IP68 rating10, so you can enjoy a phone that is able.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=c:\Users\hp\Pictures\z9.jpeg alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Samsung Galaxy A55 5G</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              Samsung Galaxy A55 5G, with its premium features like upgraded design, durable build, and satisfactory performance, competes well in the mid-range segment.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 11 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src= c:\Users\hp\Pictures\z11.webp alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">IPhone 14</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              iPhone 14 Pro or iPhone 14 Pro Max, plus the latest iPhone 15 series, offer more exciting features like an always-on display, Dynamic Island, 120Hz refresh rate and telephoto zoom. 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 12 -->
+      <div class="column is-4">
+        <div class="card custom-card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src= "C:\Users\hp\Pictures\z12.jpeg" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Oppo A3 Pro </p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="content">
+              The Oppo A3 5G gets a 6.67-inch HD+ LCD screen along with a 120Hz refresh rate for fluid visuals. Oppo additionally claims the A3 Pro 5G is also the 'brightest smartphone'.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
